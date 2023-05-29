@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<style>
+    html,
+    body {
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+        overflow: hidden;
+    }
+
+    .parastyle {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+
+</style>
+
+<head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+</head>
+
+<body >
+    
+    <p class = 'parastyle'>
+        At the same place where you changed, <br>
+        Mention the 2nd word of the name of the game (lower case) 
+
+        
+    </p>
+</body>
+
+<div class="alert", style="position: relative; top:550px;    ">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        Hint - If not able to go forward, read the instructions  <br> 
+        and every word carefully.
+  </div>
+
+
+<script>
+
+    const resizeOps = () => {
+        document.documentElement.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
+    };
+
+    resizeOps();
+    window.addEventListener("resize", resizeOps);
+
+</script>
+
+</html>

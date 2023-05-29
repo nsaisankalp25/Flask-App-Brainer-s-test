@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<style>
+    html,
+    body {
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+        overflow: hidden;
+    }
+
+    div {
+        text-align: center;
+    }
+
+    .h2tag {
+      font-family: 'cascadia mono';
+      color:blue;
+      font-weight: 500;
+    }
+
+    .h3tag {
+      font-family:'Segoe UI';
+      color:crimson; 
+      font-weight: 800;
+      
+      }
+    .infotext {
+      font-family: "Trebuchet MS";
+      font-size: 20px;
+      color:brown; 
+      font-weight: 100;
+    }
+</style>
+
+<head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+</head>
+
+<body>
+
+    <h1 style="font-family:calibri;
+    margin-top: 50px;
+    font-weight:800;
+    text-align: center;
+    font-size: 70px;
+    color: black;
+    position: relative;
+    ">
+        CONGRATS!
+    </h1>
+
+    <h2 class = "h2tag">
+        YOU'VE MADE IT, SMART.
+    </h2>
+
+    <h3 class = 'h3tag'>
+      Very Basic App <br>
+      First ever Flask Application - Early Dev Stage <br>
+      Version: 0.0.1  <br>
+    </h3>
+
+    
+</body>
+<script>
+
+    const resizeOps = () => {
+        document.documentElement.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
+    };
+
+    resizeOps();
+    window.addEventListener("resize", resizeOps);
+
+</script>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<style>
+    html,
+    body {
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+        overflow: hidden;
+    }
+
+    div {
+        text-align: center;
+    }
+
+    .h2tag {
+      font-family: 'cascadia mono';
+      color:blue;
+      font-weight: 500;
+    }
+
+    .h3tag {
+      font-family:'Segoe UI';
+      color:crimson; 
+      font-weight: 800;
+      
+      }
+    .infotext {
+      font-family: "Trebuchet MS";
+      font-size: 20px;
+      color:brown; 
+      font-weight: 100;
+    }
+</style>
+
+<head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+</head>
+
+<body>
+
+    <h1 style="font-family:calibri;
+    margin-top: 50px;
+    font-weight:800;
+    text-align: center;
+    font-size: 70px;
+    color: black;
+    position: relative;
+    ">
+        BRAINER's TEST
+    </h1>
+
+    <h2 class = "h2tag">
+      Rules of the Game
+    </h2>
+
+    <h3 class = 'h3tag'>
+      LEVEL: MEDIUM   
+    </h3>
+
+     <p class = 'infotext'>
+      > This game only works on a laptop/pc <br>
+      > Think out of the box <br>
+      > You may Modify the Link for the site <br>
+      > you may open the console (inspect page) for the site but do not mess with the code <br>
+     
+    </p>
+
+    <a href="{{url_for('func2')}}">
+      <div style=" margin-top: 20px;">
+          <button class="btn btn-outline-primary" style="
+              outline: 5px;
+              outline-style: groove;
+              outline-color: rgb(64, 0, 138);
+              cursor: pointer;
+              background-color: rgb(145, 108, 189);
+              font-family: calibri;
+              font-weight: 600;
+              font-size: 30px;
+              color:rgb(64, 0, 138);
+              border: none;
+              border-width: 0px;
+              background-color: transparent;
+          
+          ">
+              START THE GAME
+          </button>
+      </div>
+  </a>
+
+
+</body>
+<script>
+
+    const resizeOps = () => {
+        document.documentElement.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
+    };
+
+    resizeOps();
+    window.addEventListener("resize", resizeOps);
+
+</script>
+
+</html>
